@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #247791; /* biru muda lembut */
+}
+
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff; /* biru tua */
+}
+
+.contact-subtitle {
+  color: #ffffff; /* abu kebiruan */
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card i {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #007bff; /* biru utama */
+}
+
+.contact-card a, 
+.contact-card p {
+  text-decoration: none;
+  color: #1a2b4c;
+  font-weight: 500;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  background: #eef5ff; /* biru muda saat hover */
+}
+
+/* Animasi Smooth */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
